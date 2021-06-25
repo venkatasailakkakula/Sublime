@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<script type="text/javascript" src="{% static 'js/bootstrap%.min.js' %}"></script>
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="row text-center text-light">
+			<div class="col bg-success mx-2 p-3 border-rounded">
+				<h2>First Division</h2>
+			</div>
+			<div class="col bg-info mx-2 p-3 border-rounded">
+				<h2>Second Division</h2>
+			</div>
+			<div class="col bg-danger mx-2 p-3 border-rounded">
+				<h2>Third Division</h2>
+			</div>
+		</div>
+		<div class="row text-center text-light">
+			<div class="col bg-warning my-2 border-rounded">
+				<h2>Fourth Division</h2>
+				<div class="row">
+					<div class="col mx-2 my-2 bg-danger">
+						<h2>Fourth-A</h2>
+					</div>
+					<div class="col mx-2 my-2 bg-success">
+						<h2>Fourth-B</h2>
+					</div>
+				</div>
+			</div>
+			<div class="col bg-danger my-2 border-rounded">
+				<h2>Fifth Division</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="card col bg-primary mx-2">
+				<div class="card-body">
+					<h2 class="bg-danger text-light p-2 text-center border-rounded">login</h2>
+					<form class="col-md-8 mx-auto">
+						<input type="text" name="" placeholder="Enter Username" class="form-control my-2">
+						<input type="password" name="" placeholder="password" class="form-control my-2">
+						<div class="row">
+							<div class="col-sm">
+								<input type="reset" name="Reset" value="reset" class="form-control btn btn-outline-warning mx-2 my-2">
+							</div>
+							<div class="col-sm">
+								<input type="submit" name="submit" value="submit" class="form-control btn-outline-danger col-sm my-2">
+							</div>
+						<input type="button" name="" value="Forgotten password" class="form-control btn-outline-success col-sm-6 col-md-8">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="card col bg-warning mx-2 border-rounded mt-2">
+				<div class="card-body">
+					<h2>Registration Form</h2>
+					<form>
+						<input type="text" name="name" placeholder="Enter Username" class="form-control">
+						<input type="password" name="" placeholder="password" class="form-control mt-2">
+						<div class="row">
+							<div class="col">
+								<input type="number" name="" placeholder="Enter age" class="form-control col-sm-6 my-2">
+							</div>
+							<div class="col col-sm-6">
+								<select class="form-control my-">
+									<option value="male">Male</option>
+									<option value="female">Female</option>
+								</select>
+							</div>
+						</div>
+						<input type="email" name="" placeholder="email" class="form-control my-2">
+						<input type="button" name="register" value="submit" class="btn btn-block btn btn-outline-success">
+						<input type="button" name="" value="submit another response" class="form-control btn-outline-success">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
